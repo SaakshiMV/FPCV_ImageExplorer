@@ -37,7 +37,7 @@ A **web-based image editor** built with **Flask**. Users can upload an image and
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/fpcv-image-editor.git
+git clone https://github.com/SaakshiMV/FPCV_ImageExplorer.git
 cd fpcv-image-editor
 ```
 
