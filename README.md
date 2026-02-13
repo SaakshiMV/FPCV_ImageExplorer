@@ -78,17 +78,24 @@ http://127.0.0.1:5000
 ## **Project Structure**
 
 ```
-FPCV_ImageEditor/
+FPCV_ImageExplorer/
 │
-├── app.py                # Main Flask application
+├── app.py                # Main application logic
+├── utils.py              # Image processing helpers
 ├── requirements.txt      # Python dependencies
 ├── README.md             # Project documentation
+├── .gitignore
+├── demo.png              # Demo screenshot
+├── demo.gif              # Demo animation
+│
 ├── templates/
 │   └── index.html        # HTML interface
-├── static/
-│   ├── style.css         # CSS for UI
-│   └── script.js         # Optional JS for slider updates
-└── images/               # Uploaded and processed images
+│
+├── static/               
+│ ├── style.css           # CSS for UI
+│ └── script.js           # JS for slider updates
+└── fpcv/                 # Virtual environment (should be gitignored)
+
 ```
 
 ---
@@ -107,7 +114,6 @@ FPCV_ImageEditor/
 * Live histogram visualization
 * Drag-and-drop image upload
 * Additional filters (sepia, grayscale, invert, etc.)
-* Sidebar collapse for mobile devices
 * Multiple image format support
 
 ---
