@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minimal Dark Image Editor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🖼️ Image Editor</h1>
+        <div class="editor-layout">
+            
+            <!-- Left Sidebar: Sliders -->
+            <div class="sidebar" id="sliders">
+                <label>Brightness: <span id="brightnessVal">0</span></label>
+                <input type="range" min="-100" max="100" value="0" id="brightness">
+
+                <label>Contrast: <span id="contrastVal">0</span></label>
+                <input type="range" min="-100" max="100" value="0" id="contrast">
+
+                <label>Saturation: <span id="saturationVal">0</span></label>
+                <input type="range" min="-100" max="100" value="0" id="saturation">
+
+                <label>Blur: <span id="blurVal">0</span></label>
+                <input type="range" min="0" max="10" value="0" id="blur">
+
+                <label>Sharpen: <span id="sharpenVal">0</span></label>
+                <input type="range" min="0" max="5" value="0" id="sharpen">
+
+                <label>Edge Detection:</label>
+                <input type="checkbox" id="edge">
+            </div>
+
+            <!-- Right Panel: Images -->
+            <div class="images">
+                <div>
+                    <h3>Original Image</h3>
+                    <img id="originalImage" src="" alt="Original" />
+                    <form id="uploadForm" enctype="multipart/form-data">
+                        <input type="file" name="image" id="imageInput" accept="image/*" required>
+                        <button type="submit">Upload</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Adjusted Image</h3>
+                    <img id="adjustedImage" src="" alt="Adjusted" />
+                    <button id="downloadBtn">Download</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
