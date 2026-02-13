@@ -1,7 +1,3 @@
-Perfect! Here's a **fully professional, GitHub-ready README** with **badges, demo GIF placeholder, and installation shortcuts** — ready to impress anyone browsing your repo:
-
----
-
 # **FPCV Image Editor**
 
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue) ![Flask](https://img.shields.io/badge/flask-2.3.3-lightgrey) ![License](https://img.shields.io/badge/license-MIT-green)
@@ -12,9 +8,7 @@ A **web-based image editor** built with **Flask**. Users can upload an image and
 
 ## **Demo**
 
-![Demo GIF](https://via.placeholder.com/600x300.png?text=Demo+GIF+Here)
-
-> Replace the above placeholder with an actual GIF or screenshot of your editor in action.
+![Demo Image](demo.png)
 
 ---
 
