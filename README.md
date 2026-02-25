@@ -1,65 +1,86 @@
-# **FPCV Image Editor**
+# FPCV Image Explorer 🖼️
 
-![Python](https://img.shields.io/badge/python-3.10%2B-blue) ![Flask](https://img.shields.io/badge/flask-2.3.3-lightgrey) ![License](https://img.shields.io/badge/license-MIT-green)
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![Flask](https://img.shields.io/badge/flask-2.x-lightgrey)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-A **web-based image editor** built with **Flask**. Users can upload an image and interactively adjust brightness, contrast, saturation, blur, sharpen, and edge detection. The app displays **original vs edited images** side by side for real-time comparison.
-
----
-
-## **Demo**
-
-![Demo Image](demo.png)
+A lightweight **web-based image editing tool** built with **Flask** that allows users to upload images and apply interactive adjustments in real time. The interface provides a clear **side-by-side comparison** between the original and edited versions.
 
 ---
 
-## **Features**
+## ✨ Overview
 
-* Upload and view original images
-* Real-time adjustments with sliders:
+**FPCV Image Explorer** is a simple yet practical image manipulation application demonstrating fundamental computer vision operations through an intuitive browser interface.
 
-  * Brightness
-  * Contrast
-  * Saturation
-  * Blur
-  * Sharpen
-  * Edge detection toggle
-* Original image displayed above edited image
-* Download the edited image
-* Responsive design for desktop and mobile
+Users can modify visual properties such as brightness, contrast, saturation, blur, sharpening, and edge detection — all without page reloads.
 
 ---
 
-## **Installation**
+## 📸 Demo
 
-<details>
-<summary>Click to expand installation instructions</summary>
+![Demo](demo.png)
 
-1. **Clone the repository**
+---
+
+## 🚀 Features
+
+✔ Upload images directly from the browser  
+✔ Real-time image adjustments using sliders  
+
+Available controls:
+
+- **Brightness**
+- **Contrast**
+- **Saturation**
+- **Blur**
+- **Sharpen**
+- **Edge Detection Toggle**
+
+✔ Instant visual feedback  
+✔ Original vs edited comparison view  
+✔ Download edited images  
+✔ Clean, responsive UI  
+
+---
+
+## 🛠 Installation
+
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/SaakshiMV/FPCV_ImageExplorer.git
-cd fpcv-image-editor
-```
+cd FPCV_ImageExplorer
+````
 
-2. **Create and activate a virtual environment**
+---
+
+### 2️⃣ Create a Virtual Environment (Recommended)
+
+**Windows**
 
 ```bash
-# Windows
 python -m venv venv
 venv\Scripts\activate
+```
 
-# Mac/Linux
+**Mac / Linux**
+
+```bash
 python -m venv venv
 source venv/bin/activate
 ```
 
-3. **Install dependencies**
+---
+
+### 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. **Run the app**
+---
+
+### 4️⃣ Run the Application
 
 ```bash
 python app.py
@@ -71,49 +92,53 @@ Open your browser:
 http://127.0.0.1:5000
 ```
 
-</details>
+---
+
+## 🧭 Usage
+
+1. Launch the Flask server
+2. Upload an image
+3. Adjust sliders to modify image properties
+4. Enable edge detection if desired
+5. Download the edited image
 
 ---
 
-## **Project Structure**
+## 📂 Project Structure
 
 ```
 FPCV_ImageExplorer/
 │
-├── app.py                # Main application logic
-├── utils.py              # Image processing helpers
-├── requirements.txt      # Python dependencies
-├── README.md             # Project documentation
+├── app.py              # Flask application entry point
+├── utils.py            # Image processing logic
+├── requirements.txt    # Dependencies
+├── README.md
 ├── .gitignore
-├── demo.png              # Demo screenshot
-├── demo.gif              # Demo animation
+├── demo.png
+├── demo.gif
 │
 ├── templates/
-│   └── index.html        # HTML interface
+│   └── index.html      # Frontend UI
 │
-├── static/               
-│ ├── style.css           # CSS for UI
-│ └── script.js           # JS for slider updates
-└── fpcv/                 # Virtual environment (should be gitignored)
-
+├── static/
+│   ├── style.css       # Styling
+│   └── script.js       # Client-side interactions
+│
+└── venv/               # Virtual environment (ignored)
 ```
 
 ---
 
-## **Usage**
-
-1. Upload an image using the file input
-2. Adjust sliders to edit image properties
-3. Toggle edge detection if needed
-4. Download the edited image
-
----
-
-## **Future Enhancements**
+## 🔮 Potential Improvements
 
 * Live histogram visualization
-* Drag-and-drop image upload
-* Additional filters (sepia, grayscale, invert, etc.)
-* Multiple image format support
+* Additional filters (grayscale, sepia, invert, etc.)
+* Drag-and-drop uploads
+* Batch image processing
+* Performance optimizations
 
 ---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
